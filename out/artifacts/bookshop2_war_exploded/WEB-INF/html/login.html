@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆界面</title>
+</head>
+<body>
+<!-- action 决定选择的servlet -->
+<form action="login" method="post">
+
+    <!-- 生成文本框（text） name用作servlet类获取参数 -->
+    账号： <input type="text" name="name"><br>
+    密码： <input type="password" name="password"><br><br>
+
+    <!-- 提交按钮 -->
+    <input type="submit" value="登陆"><br><br>
+    <!--点击跳转按钮-->
+    <input type="button" onclick="location.href='registered.html'" value="注册">
+</form>
+</body>
+</html>
