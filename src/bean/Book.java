@@ -14,6 +14,7 @@ public class Book
     private float price;
     public String category;
     public String seller;
+    private Category realCategory;
 
     //get and set
     public int getId()
@@ -63,9 +64,17 @@ public class Book
     }
     public void setCategory_id(int category_id) {
         this.category_id = category_id;
-        this.category = new CategoryDAO().idToName(category_id);
+        this.category = new CategoryDAO().idToChinese(category_id);
     }
     public String getCategory(){return category;}
     public float getPrice(){return price;}
     public void setPrice(float price){this.price = price;}
+
+    public Category getRealCategory() {
+        return realCategory;
+    }
+
+    public void setRealCategory(Category realCategory) {
+        this.realCategory = realCategory;
+    }
 }

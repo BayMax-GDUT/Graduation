@@ -20,7 +20,7 @@ public class BaseDAO {
     protected Connection GetConnection()
     {
         try {
-            Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookshop?CharacterEncoding=utf-8","root","liziyang");
+            Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookshop?useUnicode=true&characterEncoding=UTF-8","root","liziyang");
             return c;
         }
         catch(SQLException e)

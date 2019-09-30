@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="bookshop2:war" />
       <artifact name="bookshop2:war exploded" />
     </artifacts-to-build>
   </component>
@@ -14,85 +15,41 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="bookshop2" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/WeChat/connectionServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/controller/managerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+            <state relative-caret-position="263">
+              <caret line="122" column="31" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#managerLogin#0;class#managerController#0" />
+                <element signature="method#submit_manager_login#0;class#managerController#0" />
+                <element signature="method#add_manager#0;class#managerController#0" />
+                <element signature="method#submit_add_manager#0;class#managerController#0" />
+                <element signature="method#manager_logout#0;class#managerController#0" />
+                <element signature="method#user_manage#0;class#managerController#0" />
+                <element signature="method#ban_user_manage#0;class#managerController#0" />
+                <element signature="method#category_manage#0;class#managerController#0" />
+                <element signature="method#sold_book_mange#0;class#managerController#0" />
+                <element signature="method#manager_search#0;class#managerController#0" />
+                <element signature="method#ban_user#0;class#managerController#0" />
+                <element signature="method#submit_ban_user#0;class#managerController#0" />
+                <element signature="method#unban_user#0;class#managerController#0" />
+                <element signature="method#delete_book#0;class#managerController#0" />
+                <element signature="method#add_category#0;class#managerController#0" />
+                <element signature="method#submit_add_caetgory#0;class#managerController#0" />
+                <element signature="method#manager_personal_page#0;class#managerController#0" />
+                <element signature="method#control_page#0;class#managerController#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeChat/TestWx.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeChat/ViewButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeChat/CreateMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeChat/Access_Token.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-              <folding>
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeChat/Button.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" selection-start-column="15" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WeChat/AbstractButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -104,8 +61,8 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -113,69 +70,76 @@
     <findStrings>
       <find>split</find>
       <find>Servlet</find>
+      <find>control_page</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/loginServlet.java" />
-        <option value="$PROJECT_DIR$/web/registered.html" />
-        <option value="$PROJECT_DIR$/web/jump.html" />
-        <option value="$PROJECT_DIR$/web/login.html" />
-        <option value="$PROJECT_DIR$/web/list.jsp" />
-        <option value="$PROJECT_DIR$/web/add_book.html" />
-        <option value="$PROJECT_DIR$/src/servlet/add_bookServlet.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/controller/BookController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_user_jump.jsp" />
-        <option value="$PROJECT_DIR$/src/DAO/categoryDAO.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_book_jump.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/include/loginMessage.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_user.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/loginMessage.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/include_visitor.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/jump.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_book.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/login.jsp" />
-        <option value="$PROJECT_DIR$/src/DAO/userDAO.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/include_login_message.jsp" />
-        <option value="$PROJECT_DIR$/src/DAO/sold_bookDAO.java" />
-        <option value="$PROJECT_DIR$/src/bean/Book.java" />
-        <option value="$PROJECT_DIR$/src/controller/loginController.java" />
-        <option value="$PROJECT_DIR$/src/filter/loginFilter.java" />
-        <option value="$PROJECT_DIR$/src/servlet/loginServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/registeredServlet.java" />
-        <option value="$PROJECT_DIR$/src/DAO/UserDAO.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/index.jsp" />
-        <option value="$PROJECT_DIR$/src/WeChat/ConnectServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/springMVC-servlet.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/list.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/DAO/BookDAO.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/pay.jsp" />
-        <option value="$PROJECT_DIR$/src/controller/bookController.java" />
-        <option value="$PROJECT_DIR$/src/DAO/Sold_BookDAO.java" />
-        <option value="$PROJECT_DIR$/src/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/DAO/CategoryDAO.java" />
-        <option value="$PROJECT_DIR$/src/bean/Sold_book.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/page/personal_page.jsp" />
-        <option value="$PROJECT_DIR$/src/WeChat/connectionServlet.java" />
         <option value="$PROJECT_DIR$/src/WeChat/Button.java" />
         <option value="$PROJECT_DIR$/src/WeChat/AbsractButton.java" />
         <option value="$PROJECT_DIR$/src/WeChat/AbstractButton.java" />
-        <option value="$PROJECT_DIR$/src/WeChat/ClickButton.java" />
         <option value="$PROJECT_DIR$/src/WeChat/ViewButton.java" />
         <option value="$PROJECT_DIR$/src/WeChat/Access_Token.java" />
         <option value="$PROJECT_DIR$/src/WeChat/WxService.java" />
         <option value="$PROJECT_DIR$/src/WeChat/TestWx.java" />
+        <option value="$PROJECT_DIR$/src/bean/Category.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/jump.jsp" />
+        <option value="$PROJECT_DIR$/src/WeChat/ClickButton.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/controlPage.jsp" />
+        <option value="$PROJECT_DIR$/src/bean/Ban_user.java" />
+        <option value="$PROJECT_DIR$/src/DAO/Ban_UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/DAO/Sold_BookDAO.java" />
+        <option value="$PROJECT_DIR$/src/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/DAO/ManagerDAO.java" />
+        <option value="$PROJECT_DIR$/src/DAO/BaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/bean/Manager.java" />
         <option value="$PROJECT_DIR$/src/WeChat/CreateMenu.java" />
+        <option value="$PROJECT_DIR$/src/DAO/BookDAO.java" />
+        <option value="$PROJECT_DIR$/src/DAO/CategoryDAO.java" />
+        <option value="$PROJECT_DIR$/src/bean/Book.java" />
+        <option value="$PROJECT_DIR$/src/controller/loginController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_user_jump.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_manager_jump.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/control_page.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_book_jump.jsp" />
+        <option value="$PROJECT_DIR$/src/controller/managerController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/manager_personal_page.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/pay.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/personal_page.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/ban_user.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_category.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_manager.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_user.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/ban_user_manage.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/add_book.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/springMVC-servlet.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/manager_login.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/login.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/paid.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/include_login_message.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/include_manager_login_message.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/category_manage.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/book_manage.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/sold_book_manage.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/user_manage.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/page/list.jsp" />
+        <option value="$PROJECT_DIR$/src/bean/Sold_book.java" />
+        <option value="$PROJECT_DIR$/src/controller/bookController.java" />
+        <option value="$PROJECT_DIR$/src/controller/UserController.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="903" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-15" />
+    <option name="y" value="198" />
+    <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
   <component name="ProjectView">
@@ -183,6 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,24 +155,56 @@
               <item name="bookshop2" type="b2602c69:ProjectViewProjectNode" />
               <item name="bookshop2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bookshop2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookshop2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookshop2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookshop2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookshop2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookshop2" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookshop2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookshop2" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookshop2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookshop2" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="bookshop2" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556957123564" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/lib/json" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562814991998" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/image" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -215,17 +212,22 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="WeChat" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\project\bookshop2\web\WEB-INF\html" />
       <recent name="E:\project\bookshop2\web\WEB-INF" />
       <recent name="E:\project\bookshop2\web\WEB-INF\page" />
       <recent name="E:\project\bookshop2\web\page" />
+    </key>
+    <key name="OPEN_URL_DIALOG">
+      <recent name="http://47.103.196.116:8080/manager_login" />
+      <recent name="http://47.103.196.116:8080/login" />
+      <recent name="http://http://47.103.196.116:8080/login" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="WeChat" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -288,6 +290,8 @@
     <configuration name="Tomcat 7.0.64" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.64" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="bookshop2:war exploded">
           <settings>
@@ -353,9 +357,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="bookshop2:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <configuration name="login.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.64" ALTERNATIVE_JRE_ENABLED="false">
@@ -392,9 +394,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="bookshop2:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <configuration name="registered.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.64" ALTERNATIVE_JRE_ENABLED="false">
@@ -431,9 +431,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="bookshop2:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -486,7 +484,42 @@
       <workItem from="1556859186201" duration="962000" />
       <workItem from="1556895524252" duration="775000" />
       <workItem from="1556955471311" duration="828000" />
-      <workItem from="1557018886999" duration="248000" />
+      <workItem from="1557018886999" duration="12433000" />
+      <workItem from="1557064987854" duration="4471000" />
+      <workItem from="1557105798545" duration="16234000" />
+      <workItem from="1557209860713" duration="11718000" />
+      <workItem from="1557365001112" duration="246000" />
+      <workItem from="1557379685637" duration="13740000" />
+      <workItem from="1557467538534" duration="4565000" />
+      <workItem from="1557472272378" duration="8571000" />
+      <workItem from="1557812567223" duration="10026000" />
+      <workItem from="1557882887197" duration="12822000" />
+      <workItem from="1557922689761" duration="680000" />
+      <workItem from="1557969893014" duration="13538000" />
+      <workItem from="1558062046185" duration="11723000" />
+      <workItem from="1558317958639" duration="13121000" />
+      <workItem from="1558353459383" duration="514000" />
+      <workItem from="1558354028379" duration="562000" />
+      <workItem from="1558354795490" duration="516000" />
+      <workItem from="1558401778836" duration="9706000" />
+      <workItem from="1558503289027" duration="5560000" />
+      <workItem from="1558574959912" duration="1856000" />
+      <workItem from="1558581261864" duration="10716000" />
+      <workItem from="1558661208281" duration="4973000" />
+      <workItem from="1558849142128" duration="21982000" />
+      <workItem from="1558919708096" duration="1326000" />
+      <workItem from="1558921089518" duration="11148000" />
+      <workItem from="1558941891219" duration="4237000" />
+      <workItem from="1559117342357" duration="2227000" />
+      <workItem from="1559179267320" duration="1896000" />
+      <workItem from="1559225251911" duration="594000" />
+      <workItem from="1559281874143" duration="609000" />
+      <workItem from="1560138662220" duration="3230000" />
+      <workItem from="1560215774212" duration="7321000" />
+      <workItem from="1560301950456" duration="4369000" />
+      <workItem from="1560388753331" duration="721000" />
+      <workItem from="1560393113020" duration="136000" />
+      <workItem from="1562813776339" duration="847000" />
     </task>
     <servers />
   </component>
@@ -499,7 +532,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260639000" />
+    <option name="totallyTimeSpent" value="489325000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,28 +544,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19894099" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.19969743" />
+      <window_info id="Structure" order="1" sideWeight="0.5011442" side_tool="true" weight="0.1580938" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Favorites" order="6" side_tool="true" weight="0.32980332" />
+      <window_info id="Web" order="7" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32872504" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37327188" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39443535" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872504" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32872504" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32872504" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32872504" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32872504" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -548,6 +580,41 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.1785174" />
+      <window_info id="Structure" order="1" sideWeight="0.5011442" side_tool="true" weight="0.1580938" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" weight="0.32980332" />
+      <window_info id="Web" order="7" side_tool="true" weight="0.32980332" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32872504" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35176653" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32872504" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32872504" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32872504" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32872504" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Spring" order="15" weight="0.32872504" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -557,13 +624,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DAO/UserDAO.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DAO/UserDAO.java</url>
-          <line>79</line>
+          <line>94</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -573,286 +634,58 @@
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DAO/BookDAO.java</url>
+          <line>328</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/bookController.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/loginController.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Java/jdk1.8.0_201/src.zip!/java/sql/ResultSet.java">
+    <entry file="file://$PROJECT_DIR$/src/bean/Ban_user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_201/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="263" selection-start-line="263" selection-end-line="263" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/add_bookServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/html/registered.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/html/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/html/add_book.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/html/jump.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/tomcat_8080/lib/servlet-api.jar!/javax/servlet/Filter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/tomcat_8080/lib/servlet-api.jar!/javax/servlet/FilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_201/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="478" column="12" selection-start-line="478" selection-start-column="12" selection-end-line="478" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/tomcat_8080/lib/servlet-api.jar!/javax/servlet/http/HttpSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="1448" column="53" selection-start-line="1448" selection-start-column="53" selection-end-line="1448" selection-end-column="53" />
+        <state relative-caret-position="117">
+          <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
           <folding>
-            <element signature="e#56437#56438#0" expanded="true" />
-            <element signature="e#56514#56515#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#1573#1574#0" expanded="true" />
+            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1669#1670#0" expanded="true" />
+            <element signature="e#1709#1710#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_201/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/include_visitor.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_user_jump.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_book_jump.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/bean/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding>
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1569#1570#0" expanded="true" />
-            <element signature="e#1604#1605#0" expanded="true" />
-            <element signature="e#1660#1661#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="8" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_book.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/jump.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" column="66" lean-forward="true" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/BaseDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/registeredServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/loginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/filter/loginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-          <folding>
-            <element signature="method#setCategory_id#0;class#Book#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/include_login_message.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/springMVC-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/loginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="61" column="16" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/BookDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="206" column="39" lean-forward="true" selection-start-line="206" selection-start-column="39" selection-end-line="206" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Add#0;class#BookDAO#0" />
-            <element signature="method#Update#0;class#BookDAO#0" />
-            <element signature="method#delete#0;class#BookDAO#0" />
-            <element signature="method#list#0;class#BookDAO#0" />
-            <element signature="method#list#2;class#BookDAO#0" />
-            <element signature="method#personalBook#0;class#BookDAO#0" />
-            <element signature="method#nameToId#0;class#BookDAO#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/bookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="133">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="288" column="5" selection-start-line="288" selection-start-column="5" selection-end-line="288" selection-end-column="5" />
+        <state relative-caret-position="190">
+          <caret line="333" column="32" selection-start-line="333" selection-start-column="32" selection-end-line="333" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="method#Add#0;class#UserDAO#0" />
             <element signature="method#Update#0;class#UserDAO#0" />
             <element signature="method#delete#0;class#UserDAO#0" />
             <element signature="method#getId#0;class#UserDAO#0" />
@@ -866,22 +699,412 @@
             <element signature="method#RemoveLoginUser#2;class#UserDAO#0" />
             <element signature="method#idToName#0;class#UserDAO#0" />
             <element signature="method#getCurrentUser#0;class#UserDAO#0" />
+            <element signature="method#getCurrentUser#1;class#UserDAO#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/Ban_UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#delete#0;class#Ban_UserDAO#0" />
+            <element signature="method#delete#1;class#Ban_UserDAO#0" />
+            <element signature="method#list#0;class#Ban_UserDAO#0" />
+            <element signature="method#get#0;class#Ban_UserDAO#0" />
+            <element signature="method#login#0;class#Ban_UserDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filter/loginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/ManagerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#delete#0;class#ManagerDAO#0" />
+            <element signature="method#update#0;class#ManagerDAO#0" />
+            <element signature="method#login#0;class#ManagerDAO#0" />
+            <element signature="method#list#0;class#ManagerDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeChat/connectionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-611">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="2131" column="19" selection-start-line="2131" selection-start-column="19" selection-end-line="2131" selection-end-column="19" />
+          <folding>
+            <element signature="e#82971#82972#0" expanded="true" />
+            <element signature="e#83020#83021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="http://http://47.103.196.116:8080/login">
+      <provider selected="true" editor-type-id="httpFileEditor" />
+    </entry>
+    <entry file="http://47.103.196.116:8080/login">
+      <provider selected="true" editor-type-id="httpFileEditor" />
+    </entry>
+    <entry file="http://47.103.196.116:8080/manager_login">
+      <provider selected="true" editor-type-id="httpFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/mycss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/BookDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="96" column="26" lean-forward="true" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Add#0;class#BookDAO#0" />
+            <element signature="method#Update#0;class#BookDAO#0" />
+            <element signature="method#delete#0;class#BookDAO#0" />
+            <element signature="e#3619#3620#0" expanded="true" />
+            <element signature="e#3670#3671#0" expanded="true" />
+            <element signature="method#list#2;class#BookDAO#0" />
+            <element signature="method#personalBook#0;class#BookDAO#0" />
+            <element signature="method#nameToId#0;class#BookDAO#0" />
+            <element signature="method#IdGetBook#0;class#BookDAO#0" />
+            <element signature="method#get_book#0;class#BookDAO#0" />
+            <element signature="method#get_ban_book#0;class#BookDAO#0" />
+            <element signature="method#put_book#0;class#BookDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/CategoryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="170" column="20" lean-forward="true" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#add#0;class#CategoryDAO#0" />
+            <element signature="method#update#0;class#CategoryDAO#0" />
+            <element signature="method#delete#0;class#CategoryDAO#0" />
+            <element signature="method#getCategory#0;class#CategoryDAO#0" />
+            <element signature="method#getCategoryName#0;class#CategoryDAO#0" />
+            <element signature="method#list#1;class#CategoryDAO#0" />
+            <element signature="method#idToName#0;class#CategoryDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="66" column="67" selection-start-line="66" selection-start-column="67" selection-end-line="66" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeChat/Access_Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeChat/WxService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeChat/CreateMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_user_jump.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="72" column="4" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_manager_jump.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_book_jump.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_category.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="77" column="97" selection-start-line="77" selection-start-column="97" selection-end-line="77" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_book.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="97" column="34" selection-start-line="97" selection-start-column="34" selection-end-line="97" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/ban_user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="77" column="27" lean-forward="true" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/manager_personal_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1976">
+          <caret line="104" column="96" selection-start-line="104" selection-start-column="96" selection-end-line="104" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/pay.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="342">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/tomcat_8080/lib/servlet-api.jar!/javax/servlet/http/HttpSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/paid.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1577">
+          <caret line="83" column="12" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/manager_login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1558">
+          <caret line="82" column="55" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_manager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/springMVC-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/control_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/category_manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/book_manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/include_login_message.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/include_manager_login_message.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="87" column="41" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/ban_user_manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/sold_book_manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/user_manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/bookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="128" column="86" selection-start-line="128" selection-start-column="86" selection-end-line="128" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#visitor_list#0;class#bookController#0" />
+            <element signature="method#list#0;class#bookController#0" />
+            <element signature="method#search#0;class#bookController#0" />
+            <element signature="method#submit_add_book#0;class#bookController#0" />
+            <element signature="method#add_book#0;class#bookController#0" />
+            <element signature="method#unsell_book#0;class#bookController#0" />
+            <element signature="method#buy_book#0;class#bookController#0" />
+            <element signature="method#paid#0;class#bookController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="103" column="96" selection-start-line="103" selection-start-column="96" selection-end-line="103" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#submit_add_user#0;class#UserController#0" />
+            <element signature="method#add_user#0;class#UserController#0" />
+            <element signature="method#update_user#0;class#UserController#0" />
+            <element signature="method#personal_page#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/personal_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1729">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/add_user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/Sold_BookDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="836">
+          <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="131" selection-end-column="29" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
             <element signature="method#Add#0;class#Sold_BookDAO#0" />
             <element signature="method#delete#0;class#Sold_BookDAO#0" />
             <element signature="method#update#0;class#Sold_BookDAO#0" />
@@ -892,122 +1115,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bean/Sold_book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="494">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setCategory_id#0;class#Sold_book#0" />
+            <element signature="method#setSeller_id#0;class#Sold_book#0" />
+            <element signature="method#setBuyer_id#0;class#Sold_book#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/CategoryDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/loginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+        <state relative-caret-position="589">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#add#0;class#CategoryDAO#0" />
-            <element signature="method#update#0;class#CategoryDAO#0" />
-            <element signature="method#delete#0;class#CategoryDAO#0" />
-            <element signature="method#getCategory#0;class#CategoryDAO#0" />
-            <element signature="method#getCategoryName#0;class#CategoryDAO#0" />
+            <element signature="method#indexShow#0;class#loginController#0" />
+            <element signature="method#logout#0;class#loginController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeChat/ClickButton.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/page/personal_page.jsp">
+    <entry file="file://$PROJECT_DIR$/src/controller/managerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="263">
+          <caret line="122" column="31" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#managerLogin#0;class#managerController#0" />
+            <element signature="method#submit_manager_login#0;class#managerController#0" />
+            <element signature="method#add_manager#0;class#managerController#0" />
+            <element signature="method#submit_add_manager#0;class#managerController#0" />
+            <element signature="method#manager_logout#0;class#managerController#0" />
+            <element signature="method#user_manage#0;class#managerController#0" />
+            <element signature="method#ban_user_manage#0;class#managerController#0" />
+            <element signature="method#category_manage#0;class#managerController#0" />
+            <element signature="method#sold_book_mange#0;class#managerController#0" />
+            <element signature="method#manager_search#0;class#managerController#0" />
+            <element signature="method#ban_user#0;class#managerController#0" />
+            <element signature="method#submit_ban_user#0;class#managerController#0" />
+            <element signature="method#unban_user#0;class#managerController#0" />
+            <element signature="method#delete_book#0;class#managerController#0" />
+            <element signature="method#add_category#0;class#managerController#0" />
+            <element signature="method#submit_add_caetgory#0;class#managerController#0" />
+            <element signature="method#manager_personal_page#0;class#managerController#0" />
+            <element signature="method#control_page#0;class#managerController#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeChat/WxService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#post#0;class#WxService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeChat/connectionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeChat/TestWx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeChat/ViewButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeChat/CreateMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeChat/Access_Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeChat/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WeChat/AbstractButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1030,7 +1185,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

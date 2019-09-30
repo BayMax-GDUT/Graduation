@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import bean.Ban_user;
 import bean.User;
 import com.sun.xml.internal.ws.util.xml.XMLReaderComposite;
 
@@ -47,11 +48,25 @@ public class UserDAO extends BaseDAO {
     }
 
     public void delete(String name) {
-        try (Connection c = GetConnection();
-             Statement s = c.createStatement()) {
-            String sql = "delete from user where name = " + name;
-            s.execute(sql);
-        } catch (SQLException e) {
+        String sql = "delete from user where name = ?";
+        try(Connection c = GetConnection();
+             PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1,name);
+            ps.execute();
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void delete(int id){
+        String sql = "delete from user where id = ?";
+        try(Connection c = GetConnection();
+        PreparedStatement ps = c.prepareStatement(sql)){
+            ps.setInt(1,id);
+            ps.execute();
+        }
+        catch(SQLException e)
+        {
             e.printStackTrace();
         }
     }
@@ -285,6 +300,52 @@ public class UserDAO extends BaseDAO {
         {
             e.printStackTrace();
             return null;
+        }
+    }
+
+    public User getCurrentUser(int id){
+        String sql = "select * from user where id = ?";
+        try(Connection c = GetConnection();
+        PreparedStatement ps = c.prepareStatement(sql))
+        {
+            ps.setInt(1,id);
+            ResultSet rs = ps.executeQuery();
+            if(rs.next())
+            {
+                User user = new User();
+                user.setId(rs.getInt("id"));
+                user.setName(rs.getString("name"));
+                user.setSchool(rs.getString("school"));
+                user.setNumber(rs.getLong("number"));
+                user.setPassword(rs.getString("password"));
+                user.setAddress(rs.getString("address"));
+                user.setPhone_number(rs.getInt("phone_number"));
+                return user;
+            }
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public void add(Ban_user ban_user){
+        String sql = "insert into user(id,name,school,number,password,address,phone_number) " +
+                "values(?,?,?,?,?,?,?)";
+        try (Connection c = GetConnection();
+             PreparedStatement ps = c.prepareStatement(sql)
+        ) {
+            ps.setInt(1,ban_user.getId());
+            ps.setString(2, ban_user.getName());
+            ps.setString(3, ban_user.getSchool());
+            ps.setLong(4, ban_user.getNumber());
+            ps.setString(5, ban_user.getPassword());
+            ps.setString(6, ban_user.getAddress());
+            ps.setInt(7, ban_user.getPhone_number());
+            ps.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 

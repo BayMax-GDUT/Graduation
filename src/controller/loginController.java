@@ -1,5 +1,6 @@
 package controller;
 
+import DAO.Ban_UserDAO;
 import DAO.BookDAO;
 import DAO.UserDAO;
 import bean.User;
@@ -22,9 +23,22 @@ public class loginController
         User user = new User();
         user.setName(request.getParameter("name"));
         user.setPassword(request.getParameter("password"));
-        boolean b = new UserDAO().login(user);
         ModelAndView mav;
-        if(b) {
+
+        //先判断是否被封禁 再判断是否可以正常登录 最后再判断是否不存在
+        boolean a = new Ban_UserDAO().login(user.getName(), user.getPassword());
+        boolean b = new UserDAO().login(user);
+        if(a)
+        {
+            mav = new ModelAndView("login");
+            //mav.addObject("message","此账号被封禁，暂时无法登录");
+            request.getSession().setAttribute("message", "此账号被封禁，暂时无法登录");
+            return mav;
+        }
+
+
+
+        else if(b) {
             //使用表中插入临时数据的方法
             //new UserDAO().AddLoginUser(user.getName());
 
@@ -37,8 +51,8 @@ public class loginController
         else
         {
             mav = new ModelAndView("login");
-            if(user != null)
-                mav.addObject("message","账号或密码错误，请重新输入");
+                //mav.addObject("message","账号或密码错误，请重新输入");
+            request.getSession().setAttribute("message", "账号或密码错误，请重新输入");
         }
 
         return mav;

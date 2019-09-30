@@ -8,7 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" import="java.util.*" isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
-<head></head>
+<head>
+    <meta content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <style type="text/css">
+    .text{
+        color:#ffffff;
+    }
+    </style>
+</head>
 <body align="right">
 
 <%
@@ -19,26 +27,18 @@
 
     if(session.getAttribute("name") != null)
     {
-        out.print("欢迎您，" + "<a href=\"/personal_page\">" + session.getAttribute("name") + "</a>");
-        out.print("\t<input type=\"button\" onclick=\"logout()\" onsubmit=\"return logout()\" value=\"注销\">");
+        out.print("<a class=\"text\">欢迎您，" + session.getAttribute("name") + "</a>");
+        out.print("\t<input type=\"button\" value=\"个人中心\" onclick=\"location.href='/personal_page'\" class=\"lightblue\">");
+        out.print("\t<input type=\"button\" onclick=\"logout()\" value=\"注销\" class=\"lightblue\">");
     }
     else
     {
-        out.print("<a href=\"/login\">登录</a>\t");
-        out.print("<a href=\"/add_user\">注册</a>");
+        out.print("<input type=\"button\" value=\"登录\" onclick=\"location.href='login'\" class=\"lightblue\">\t");
+        out.print("<input type=\"button\" value=\"注册\" onclick=\"location.href='/add_user'\" class=\"lightblue\">");
     }
+    out.print("\t<input type=\"button\" value=\"首页\" onclick=\"location.href='/list'\" class=\"lightblue\">");
 %>
 
-<%--<script type="text/javascript">--%>
-    <%--function logout() {--%>
-        <%--var mymessage = confirm("你喜欢JavaScript吗?");--%>
-        <%--if (mymessage == true) {--%>
-            <%--document.write("很好,加油!");--%>
-        <%--} else {--%>
-            <%--document.write("JS功能强大，要学习噢!");--%>
-        <%--}--%>
-    <%--}--%>
-<%--</script>--%>
 </body>
 </html>
 <script type="text/javascript">

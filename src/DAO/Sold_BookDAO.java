@@ -19,8 +19,8 @@ public class Sold_BookDAO extends BaseDAO
     }
 
     public void Add(Sold_book sold_book) {
-        String sql = "insert into sold_book(id,name,publisher,image_path,category_id,seller_id,buyer_id,price)" +
-                " values(?,?,?,?,?,?,?,?)";
+        String sql = "insert into sold_book(id,name,publisher,image_path,category_id,seller_id,buyer_id,price,receiver_name,address,phone_number)" +
+                " values(?,?,?,?,?,?,?,?,?,?,?)";
         try(Connection c = GetConnection();
             PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setInt(1,sold_book.getId());
@@ -31,6 +31,9 @@ public class Sold_BookDAO extends BaseDAO
             ps.setInt(6,sold_book.getSeller_id());
             ps.setInt(7,sold_book.getBuyer_id());
             ps.setFloat(8,sold_book.getPrice());
+            ps.setString(9,sold_book.getReceiver_name());
+            ps.setString(10,sold_book.getAddress());
+            ps.setInt(11,sold_book.getPhone_number());
             ps.execute();
         }
         catch(SQLException e)
@@ -55,7 +58,7 @@ public class Sold_BookDAO extends BaseDAO
 
     public void update(Sold_book sold_book) {
         String sql = "update sold_book set name = ?,publisher = ?,image_path = ?,category_id = ?," +
-                "seller_id = ?,buyer_id = ?,price = ? where id = ?";
+                "seller_id = ?,buyer_id = ?,price = ? receiver_name = ? address = ? phone_number = ? where id = ?";
         try(Connection c = GetConnection();
         PreparedStatement ps = c.prepareStatement(sql))
         {
@@ -66,7 +69,10 @@ public class Sold_BookDAO extends BaseDAO
             ps.setInt(5,sold_book.getSeller_id() );
             ps.setInt(6,sold_book.getBuyer_id() );
             ps.setFloat(7,sold_book.getPrice());
-            ps.setInt(8,sold_book.getId());
+            ps.setString(8,sold_book.getReceiver_name());
+            ps.setString(9,sold_book.getAddress());
+            ps.setInt(10,sold_book.getPhone_number());
+            ps.setInt(11,sold_book.getId());
             ps.execute();
         }
         catch(SQLException e)
@@ -93,6 +99,9 @@ public class Sold_BookDAO extends BaseDAO
                 sold_book.setSeller_id(rs.getInt("seller_id"));
                 sold_book.setBuyer_id(rs.getInt("buyer_id"));
                 sold_book.setPrice(rs.getFloat("price"));
+                sold_book.setReceiver_name(rs.getString("receiver_name"));
+                sold_book.setAddress(rs.getString("address"));
+                sold_book.setPhone_number(rs.getInt("phone_number"));
                 list.add(sold_book);
             }
             return list;
@@ -104,7 +113,8 @@ public class Sold_BookDAO extends BaseDAO
         }
     }
 
-    public List<Sold_book> listFinish(int id){
+    //查找某个id已经完成的订单
+    public List<Sold_book> list(int id){
 
         List<Sold_book> finish = new ArrayList<>();
         String sql = "select * from sold_book where seller_id = ? or buyer_id = ?";
@@ -125,6 +135,9 @@ public class Sold_BookDAO extends BaseDAO
                 sold_book.setSeller_id(rs.getInt("seller_id"));
                 sold_book.setBuyer_id(rs.getInt("buyer_id"));
                 sold_book.setPrice(rs.getFloat("price"));
+                sold_book.setReceiver_name(rs.getString("receiver_name"));
+                sold_book.setAddress(rs.getString("address"));
+                sold_book.setPhone_number(rs.getInt("phone_number"));
                 finish.add(sold_book);
             }
         }

@@ -1,0 +1,11 @@
+.headline {
+	color: #516380;
+}  /* 表格标题文字颜色 */
+
+.firstline {
+	background-color: #91a7bc;
+}  /* 表头行背景色 */
+
+.content {
+	background-color: #dce1e3;
+}  /* 内容主题背景色 */

@@ -88,6 +88,8 @@ public class BookDAO extends BaseDAO
             {
                 Book book = new Book();
                 book.setSeller_id(rs.getInt("seller_id"));
+                if(book.getSeller() == null || book.getSeller() == "")
+                    continue;
                 book.setPublisher(rs.getString("publisher"));
                 book.setName(rs.getString("name"));
                 book.setImage_path(rs.getString("image_path"));
@@ -105,7 +107,7 @@ public class BookDAO extends BaseDAO
         }
     }
 
-    //特定名字的所有图书
+    //特定名字(图书名字)的所有图书
     public List<Book> list(String name)
     {
         return list(name,0,Short.MAX_VALUE);
@@ -131,6 +133,8 @@ public class BookDAO extends BaseDAO
                 book.setName(rs.getString("name"));
                 book.setPublisher(rs.getString("publisher"));
                 book.setSeller_id(rs.getInt("seller_id"));
+                if(book.getSeller() == "" || book.getSeller() == null)
+                    continue;
                 book.setPrice(rs.getFloat("price"));
                 list.add(book);
             }
@@ -160,6 +164,7 @@ public class BookDAO extends BaseDAO
                 book.setSeller_id(rs.getInt("seller_id"));
                 book.setCategory_id(rs.getInt("category_id"));
                 book.setPrice(rs.getFloat("price"));
+                book.setImage_path(rs.getString("image_path"));
                 book.setPublisher(rs.getString("publisher"));
                 book.setName(rs.getString("name"));
                 book.setId(rs.getInt("id"));
@@ -220,6 +225,126 @@ public class BookDAO extends BaseDAO
         {
             e.printStackTrace();
             return null;
+        }
+    }
+
+    /*
+     *特定卖家id出售的图书
+     */
+    public List<Book> get_book(int UserId){
+        List<Book> list = new ArrayList<>();
+        String sql = "select * from book where seller_id = ?";
+        try(Connection c = GetConnection())
+        {
+            PreparedStatement ps = c.prepareStatement(sql);
+            ps.setInt(1,UserId);
+            c.setAutoCommit(false);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next())
+            {
+                Book book = new Book();
+                book.setSeller_id(rs.getInt("seller_id"));
+                book.setCategory_id(rs.getInt("category_id"));
+                book.setPrice(rs.getFloat("price"));
+                book.setImage_path(rs.getString("image_path"));
+                book.setPublisher(rs.getString("publisher"));
+                book.setName(rs.getString("name"));
+                book.setId(rs.getInt("id"));
+                list.add(book);
+            }
+            PreparedStatement ps1 = c.prepareStatement("delete from book where seller_id = " + UserId);
+            ps1.execute();
+            c.commit();
+            c.setAutoCommit(true);
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    public void put_ban_book(List<Book> books){
+        String sql = "insert into ban_book values(?,?,?,?,?,?,?)";
+        try(Connection c = GetConnection();
+        PreparedStatement ps = c.prepareStatement(sql))
+        {
+            for(Book book:books)
+            {
+                ps.setInt(1,book.getId());
+                ps.setString(2,book.getName());
+                ps.setString(3,book.getPublisher());
+                ps.setString(4,book.getImage_path());
+                ps.setInt(5,book.getCategory_id());
+                ps.setInt(6,book.getSeller_id());
+                ps.setFloat(7,book.getPrice());
+                ps.execute();
+            }
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public List<Book> get_ban_book(int UserId) {
+        List<Book> list = new ArrayList<>();
+        String sql = "select * from ban_book where seller_id = " + UserId;
+        try(Connection c = GetConnection()
+        ) {
+            PreparedStatement ps = c.prepareStatement(sql);
+            //添加事务，两个sql语句都成功才执行，否则都不执行
+            c.setAutoCommit(false);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next())
+            {
+                Book book = new Book();
+                book.setId(rs.getInt("id"));
+                book.setName(rs.getString("name"));
+                book.setImage_path(rs.getString("image_path"));
+                book.setSeller_id(UserId);
+                book.setCategory_id(rs.getInt("category_id"));
+                book.setPublisher(rs.getString("publisher"));
+                book.setPrice(rs.getFloat("price"));
+                list.add(book);
+            }
+            //获取完之后进行删除
+            PreparedStatement ps1 = c.prepareStatement("delete from ban_book where seller_id = " + UserId);
+            ps1.execute();
+            c.commit();
+            ps.close();
+            ps1.close();
+            c.setAutoCommit(true);
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+        }
+        finally {
+            return list;
+        }
+    }
+
+    public void put_book(List<Book> books){
+        String sql = "insert into book values(?,?,?,?,?,?,?)";
+        try(Connection c = GetConnection();
+        PreparedStatement ps = c.prepareStatement(sql))
+        {
+            for(Book book:books)
+            {
+                ps.setInt(1,book.getId());
+                ps.setString(2,book.getName());
+                ps.setString(3,book.getPublisher());
+                ps.setString(4,book.getImage_path());
+                ps.setInt(5,book.getCategory_id());
+                ps.setInt(6,book.getSeller_id());
+                ps.setFloat(7,book.getPrice());
+                ps.execute();
+            }
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
         }
     }
 }

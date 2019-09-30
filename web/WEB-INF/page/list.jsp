@@ -13,8 +13,72 @@
     <%--<jsp:param name="user" value="${param.userName}" />--%>
 <%--</jsp:include>--%>
 <%@include file="include_login_message.jsp"%>
-<br>
-<input align="right" type="button" onclick="checkLogin()" value="新增出售图书">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <%--<link type="text/css" rel="stylesheet" href="mycss.css" />--%>
+    <style type="text/css">
+        body {
+            background-color: rgb(49, 57, 89);
+        }
+        h3 {
+            font-size: 36;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+        }
+        .deepblue {
+            width: 300px;
+            height: 50px;
+            background-color: rgb(39, 38, 57);
+            font-size: 18px;
+            color: rgb(169, 169, 169);
+            border-width: 0px;
+        }
+        .lightblue {
+            width: 80px;
+            height: 30px;
+            background-color: rgb(92, 150, 217);
+            font-size: 14px;
+            color: #ffffff;
+            border-width: 0px;
+        }
+        table {
+            width: 90%;
+            height: 10%;
+            border-width: 0;
+            text-align: center;
+        }
+        .headline {
+            color: #516380;
+        }  /* 表格标题文字颜色 */
+
+        .firstline {
+            background-color: #91a7bc;
+        }  /* 表头行背景色 */
+
+        .content {
+            background-color: #dce1e3;
+        }  /* 内容主题背景色 */
+        .search-kuang {
+            width: 220px;
+            height: 30px;
+            font-size: 14px;
+            border-width: 0px;
+        }
+        .search-button {
+            width: 60px;
+            height: 30px;
+            background-color: rgb(92, 150, 217);
+            font-size: 14px;
+            color: #ffffff;
+            border-width: 0px;
+        }
+    </style>
+</head>
+<body>
+<br><br>
+<input align="right" type="button" onclick="checkLogin()" value="新增出售" class="lightblue">
 <script language="JavaScript">
     function checkLogin() {
         var name = "<%=session.getAttribute("name")%>";
@@ -29,23 +93,30 @@
 
     }
 </script>
+<form action="search" align="center">
+    <input type="text" name="name" value="" class="search-kuang" placeholder="图书名">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" value="搜索" class="search-button">
+</form>
 <center>
+
 <table  border='1' cellspacing='0'>
-    当前用户:<%=session.getAttribute("name")%>
+    <%--当前用户:<%=session.getAttribute("name")%>--%>
     <%--<%session.setAttribute("name", );%>--%>
-    <caption>在售图书</caption>
-    <tr>
+    <caption class="headline">在售图书</caption>
+
+    <tr class="firstline">
         <%--<td>id</td>--%>
-        <td>name</td>
-        <td>publisher</td>
+        <td>名字</td>
+        <td>出版社</td>
         <%--<td>image_path</td>--%>
-        <td>price</td>
-        <td>category</td>
-        <td>seller</td>
-        <td>operation</td>
+        <td>价钱</td>
+        <td>图书类型</td>
+        <td>卖家</td>
+        <td>操作</td>
     </tr>
     <c:forEach items="${books}" var = "book" varStatus="st">
-        <tr>
+        <tr class="content">
             <%--目前只判断是否买自己的书 是否登录功能将放到spring的面向切口编程中--%>
             <form action="/buy_book" onsubmit="return check(${book.getSeller_id()})" method="post">
         <%--<td>${book.getId()}</td>--%>
@@ -53,9 +124,9 @@
         <td>${book.getPublisher()}</td>
         <%--<td>${book.getImage_path()}</td>--%>
             <td>${book.getPrice()}</td>
-        <td>${book.category}</td>
+        <td>${book.getCategory()}</td>
         <td>${book.seller}</td>
-            <td><input type="submit" value="购买"></td>
+            <td><input type="submit" value="购买" class="lightblue"></td>
                 <input type="hidden" name="id" value="${book.getId()}">
             </form>
         </tr>
@@ -63,12 +134,14 @@
 
 </table><br><br>
 </center>
-
+</body>
+</html>
 <script>
     //检查是否用户买自己的书
     function check(seller_id) {
+        var userName = "<%=(String)session.getAttribute("name")%>"
         var currentUserId = "<%=new UserDAO().getId((String) session.getAttribute("name"))%>";
-        if(currentUserId == null)
+        if("null" == userName)
         {
             alert("请先进行登录");
             return false;
